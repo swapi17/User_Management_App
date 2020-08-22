@@ -1,41 +1,23 @@
-# User_Management_App
-MEAN Stack CRUD App for User Management
+# Angular8MeanstackAngularMaterial
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-## Prerequisites
-
-1) To start with this, install node and npm
-
-* [NodeJs](https://nodejs.org/en/) - How to install node?
-
-2) Install git 
+Step by step article on [Angular 8/9/10 MEAN Stack Tutorial – Build CRUD App with Angular Material 8](https://www.positronx.io/angular-8-mean-stack-tutorial-build-crud-angular-material/)
 
 
-* [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) - How to install Git?
+## Start MEAN Stack App
+Start Angular app & install required dependencies
 
-3) Use npm to install Angular CLI . Exceute this command
+- git clone https://github.com/SinghDigamber/Angular8MeanstackAngularMaterial.git
+- Run `npm install` from the root of the project
+- run `ng serve --open` to start angular 
 
-```
->npm install -g @angular/cli
-```
+## Start Backend
+- run `cd backend`
+- run `npm install`
+- run `nodemon` 
 
- 
-### Installing/ Running locally
+## Start MongoDB
+I assume you have already set up MongoDB community edition in your local development system, if not then you can take the help from the following tutorial. [https://docs.mongodb.com/manual/administration/install-community/](https://docs.mongodb.com/manual/administration/install-community/)
 
-## For server: 
-Technology: Nodejs, expressjs, mongodb
-
-To run server please run `npm start`
-Hit `localhost:3000`
-
-## For client: 
-Technology: typecript, Angular 8
-
-To run client please run `ng serve`
-
-Navigate to http://localhost:4200/ via browser . You will see the application is running.
-
-
+- mongod --config /usr/local/etc/mongod.conf
+- brew services start mongodb-community@4.2
+- mongo
